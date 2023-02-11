@@ -1,6 +1,8 @@
 README-Lookup.txt
 09 February 2023
 
+Beth Bryson
+
 Contents
 1. Installing the components for the Lookup package
 2. Using the Lookup package
