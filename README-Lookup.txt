@@ -79,7 +79,7 @@ Setting up to use the Lookup package with your data
 	5. Run "Generate all parses" module
 		- Look in the Output folder for words-uf.txt to find the "parses" of the generated words.
 		- The other output formats are also in this folder, including words-SIG.txt for the SIGMORPHON format.
-	6. Run the Run STAMP module
+	6. Run "Run STAMP" module
 		- Look in the Output folder for words-surf.txt to find the surface forms of the words.
 	7. These files together constitute a pairing of parses and surface forms of the generated words.
 	Use post-processing techniques to work with these output files for your custom purposes.
