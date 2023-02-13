@@ -28,7 +28,8 @@ FieldWorks Language Explorer (FLEx) version 9.1.14
 	6. To confirm that your morphological description matches what you expect, you
 	can create texts in the Texts & Words area containing paradigms, and run the
 	parser over them using the command Parser/Parse Words in Text. More details 
-	about the parser can be found in Help/Language Explorer and Help/Demo Movies (https://vimeo.com/channels/fieldworks),
+	about the parser can be found in Help/Language Explorer and Help/Demo Movies
+	(https://vimeo.com/channels/fieldworks),
 	starting at video #44: "Using the Parser".
 
 Python:
@@ -69,20 +70,21 @@ Setting up to use the Lookup package with your data
 		- Find your project name, double click it
     Setting up for a specific run on the data (repeat for different scenarios)
 	4. Configure the settings.
-	[There is a module "Lookup Settings" for setting these values, but currently there is a bug.
+	[There is a module "Lookup Settings Tool" for setting these values, but currently there is a bug.
 	For now, just edit the config file by hand: Lookup-FlexTools-2.3/WorkProject/<YourProject>/Config/Lookup.config]
 		- Set Target Project to your project name (both source and target should be the same)
-		- Set "Limit number of stems" to a number if you want just a few stems (e.g., 1 or 5, for testing)
-		- Set "Limit to specific POS value" if you only want some POS: v, or n,v,
-		- Set "Limit to specific Citation Form" if you want only a single Headword
+		- Set "Limit number of stems" ("LimitStemCount") to a number if you want just a few stems (e.g., 1 or 5, for testing)
+		- Set "Limit to specific POS value" ("LimitPOS") if you only want some POS: v, or n,v,
+		- Set "Limit to specific Citation Form" ("LimitLex") if you want only a single Headword
 		(You can set all three, or only one or two, of these limiting variables.)
-	5. Run "Generate all parses" module
+	5. Run "Generate all parses from FLEx project in ANA format" module
 		- Look in the Output folder for words-uf.txt to find the "parses" of the generated words.
 		- The other output formats are also in this folder, including words-SIG.txt for the SIGMORPHON format.
-	6. Run "Run STAMP" module
+	6. Run "Synthesize Analyzed Text with STAMP" module
 		- Look in the Output folder for words-surf.txt to find the surface forms of the words.
 	7. These files together constitute a pairing of parses and surface forms of the generated words.
-	Use post-processing techniques to work with these output files for your custom purposes.
+	Use post-processing techniques (e.g. "post-processing.ipynb" in the same GitHub repository)
+	to work with these output files for your custom purposes.
 
 
 
